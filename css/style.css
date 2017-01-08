@@ -1,0 +1,272 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,700,900);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,900);
+
+/*	################################################################
+	1. GENERAL STRUCTURES
+################################################################# */
+
+body {
+	background: #ffffff;
+	margin: 0;
+	height: 100%;
+	color: #384452;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+}
+
+h3 {
+	padding-top:50px;
+	padding-bottom: 25px;
+}
+
+p {
+	padding: 0;
+	margin-bottom: 12px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+	color: #384452;
+	margin-top: 10px;
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+}
+
+a {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	-webkit-transition: background-color .4s linear, color .4s linear;
+	-moz-transition: background-color .4s linear, color .4s linear;
+	-o-transition: background-color .4s linear, color .4s linear;
+	-ms-transition: background-color .4s linear, color .4s linear;
+	transition: background-color .4s linear, color .4s linear;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+  color:#01b2fe;
+}
+
+::-moz-selection  {
+	color: #fff;
+	text-shadow:none;
+	background:#2B2E31;
+}
+::selection {
+	color: #fff;
+	text-shadow:none;
+	background:#2B2E31;
+}
+
+.lefty {
+	text-align: left;
+}
+.centered {
+	text-align: center !important;
+}
+
+/*	################################################################
+	BOOTSTRAP MODIFICATIONS & TWEAKS
+################################################################# */
+@media(min-width:767px) {
+    .navbar {
+        padding: 10px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+    }
+}
+
+.navbar-brand {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 900;
+}
+
+.navbar-header .navbar-brand {
+	color: white;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: white;
+	font-weight: 700;
+	font-size: 12px;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+	color: #384452;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	color: #384452;
+	background-color: transparent;
+}
+
+.navbar-default {
+	background-color: #5fbede;
+	border-color: transparent;
+}
+
+.dropdown-menu {
+	background: #5fbede;
+}
+
+.dropdown-menu > li > a {
+	color: white;
+	font-weight: 700;
+	font-size: 12px;
+}
+
+/*	################################################################
+	SITE WRAPS
+################################################################# */
+
+/* Header */
+#header{
+	height: 550px;
+	margin-top: 50px;
+	background: url('../img/identidade/sol-hero.png') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.logo {
+    margin: auto;
+	padding-top: 30px;
+	text-align: center;
+	width: 200px;
+}
+
+/* oq-fazemoss Wrap */
+#oq-fazemos {
+	margin-top: 0px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	width: 100%;
+}
+
+#oq-fazemos i {
+	color: #00b3fe;
+	font-size: 60px;
+	padding: 15px;
+}
+
+/* Projetos */
+#projetos {
+	display: block;
+	text-align: center
+}
+
+.projeto-item {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+/* Historia */
+#historia {
+	/*background: url(../img/t-back.png) no-repeat center top;*/
+	margin-top: 0px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 450px;
+	width: 100%;
+	background: url('../img/identidade/nuvens.png') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#historia i {
+	font-size: 50px;
+	color: white;
+	margin-bottom: 25px;
+}
+
+#historia p {
+	font-size: 15px;
+	line-height: 30px;
+}
+
+/* Quote */
+
+#quote {
+	height: 150px;
+	line-height: 150px;
+	background-color: #fa8901;
+}
+
+.quote-text {
+	font-size: 30px;
+	font-family: cursive;
+	font-weight: bolder;
+	color: #fff;
+	/*text-shadow:
+	-1px -1px 0 #000,
+	1px -1px 0 #000,
+	-1px 1px 0 #000,
+	1px 1px 0 #000;*/
+	display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+	padding-left: 12.5%;
+}
+
+/* Footer */
+#footerwrap {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background: #5fbede;
+}
+
+#footerwrap p {
+	color: white;
+}
+
+#footerwrap h4 {
+	color: white;
+}
+
+#footerwrap i {
+	font-size: 30px;
+	color: white;
+	padding-right: 25px;
+}
+
+#footerwrap i:hover {
+	color: #384452
+}
+
+/*	################################################################
+	PROJETOS
+################################################################# */
+
+.titulo-proj {
+	margin-top: 25px;
+}
+
+/*	################################################################
+	PAGE CONFIGURATIONS
+################################################################# */
+/* General Tweaks */
+
+.spacing {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
